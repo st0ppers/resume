@@ -2,6 +2,7 @@ import {
   AppBar,
   Box,
   Button,
+  Link,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -9,7 +10,7 @@ import React, { useState } from "react";
 import { backgroundColor, borderStyle,  } from "../css/Css";
 
 export const Header = () => {
-  const navItems = ["About me", "Resume", "Contact"];
+  const navItems = ["Home", "Resume", "Contact"];
   const [page,setPage] = useState("About me");
 
   return (
@@ -19,7 +20,7 @@ export const Header = () => {
           <Typography>Alexander Damov</Typography>
             <Box >
               {navItems.map((item) => (
-                <Button key={item} sx={{ color:"#fff", borderBottom: item === page ?  borderStyle : "" }} 
+                <Button href={`${item}`} key={item} sx={{ color:"#fff", borderBottom: item === page ?  borderStyle : "" }} 
                 onClick={() => {
                     setPage(item);
                  }}>

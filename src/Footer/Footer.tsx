@@ -9,15 +9,13 @@ import { backgroundColor, fontColor } from "../css/Css";
 
 export const Footer = () => {
   return (
-    <Box
-      sx={{ display: "flex", justifyContent: "center", marginTop: "auto" }}
-    >
+    <Box sx={{ display: "flex", justifyContent: "center", marginTop: "auto" }}>
       <BottomNavigation sx={{ backgroundColor }}>
-        <BottomNavigationAction sx={fontColor} label="Instagram" icon={<InstagramIcon />} />
-        <BottomNavigationAction sx={fontColor} label="Facebook" icon={<FacebookIcon />} />
-        <BottomNavigationAction sx={fontColor} label="GitHub" icon={<GitHubIcon />} />
-        <BottomNavigationAction sx={fontColor} label="Twitter" icon={<TwitterIcon />} />
-        <BottomNavigationAction sx={fontColor} label="LinkedIn" icon={<LinkedInIcon />} />
+        <BottomNavigationAction href="https://www.instagram.com/" sx={fontColor} label="Instagram" icon={<InstagramIcon />} />
+        <BottomNavigationAction href="https://www.facebook.com/" sx={fontColor} label="Facebook" icon={<FacebookIcon />} />
+        <BottomNavigationAction href="https://github.com/st0ppers" sx={fontColor} label="GitHub" icon={<GitHubIcon />} />
+        <BottomNavigationAction href="https://twitter.com/home?lang=bg" sx={fontColor} label="Twitter" icon={<TwitterIcon />} />
+        <BottomNavigationAction href="https://www.linkedin.com/in/alexsander-damov-8a634a237/" sx={fontColor} label="LinkedIn" icon={<LinkedInIcon />} />
       </BottomNavigation>
     </Box>
   );

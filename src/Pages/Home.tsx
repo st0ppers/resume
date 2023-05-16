@@ -38,9 +38,6 @@ export const Home = () => {
           </Typography>
         </Box>
       </Box>
-      <Box sx={{ display: "flex", alignItems:"center", margin:"0 auto"}}>
-        <Button sx={{ flexWrap: "wrap", color:"#fff" }}>More about me</Button>
-      </Box>
     </>
   );
 };

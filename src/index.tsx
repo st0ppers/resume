@@ -63,5 +63,11 @@ const router = createBrowserRouter([
 ]);
 
 root.render(
-  <RouterProvider router={router} />
+  <React.StrictMode>
+        <Container>
+          <Header />
+          <Resume/>
+          <Footer />
+        </Container>
+      </React.StrictMode>
 );

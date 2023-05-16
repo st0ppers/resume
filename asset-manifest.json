@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.847c3001.js",
-    "static/media/bogdan.jpg": "/static/media/bogdan.0e507d7b95abcbe4f693.jpg",
-    "index.html": "/index.html",
-    "main.847c3001.js.map": "/static/js/main.847c3001.js.map"
+    "main.js": "/resume/static/js/main.381ada80.js",
+    "static/media/bogdan.jpg": "/resume/static/media/bogdan.0e507d7b95abcbe4f693.jpg",
+    "index.html": "/resume/index.html",
+    "main.381ada80.js.map": "/resume/static/js/main.381ada80.js.map"
   },
   "entrypoints": [
-    "static/js/main.847c3001.js"
+    "static/js/main.381ada80.js"
   ]
 }

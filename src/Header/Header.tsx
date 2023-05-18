@@ -2,16 +2,16 @@ import {
   AppBar,
   Box,
   Button,
-  Link,
   Toolbar,
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
 import { backgroundColor, borderStyle,  } from "../css/Css";
+import { Link, Navigate } from "react-router-dom";
 
 export const Header = () => {
-  const navItems = ["Home", "Resume", "Contact"];
-  const [page,setPage] = useState("About me");
+  const navItems = ["Home", "Resumee", "Contact"];
+  const [page,setPage] = useState("About Me");
 
   return (
     <Box>
@@ -20,13 +20,10 @@ export const Header = () => {
           <Typography>Alexander Damov</Typography>
             <Box >
               {navItems.map((item) => (
-                <Button href={`${item}`} key={item} sx={{ color:"#fff", borderBottom: item === page ?  borderStyle : "" }} 
-                onClick={() => {
-                    setPage(item);
-                 }}>
-                  {item}
-                </Button>
-              ))}
+              <a key={item} 
+              onClick={() =>  setPage(item)}
+              style={{color:"#fff",textDecoration:"none",padding:"0 10px",borderBottom: item === page ?  borderStyle : ""}} 
+              href={item}>{item}</a>))}
             </Box>
         </Toolbar>
       </AppBar>

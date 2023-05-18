@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/resume/static/js/main.3ddde0e2.js",
+    "main.js": "/resume/static/js/main.72d82d0d.js",
     "static/media/bogdan.jpg": "/resume/static/media/bogdan.0e507d7b95abcbe4f693.jpg",
     "index.html": "/resume/index.html",
-    "main.3ddde0e2.js.map": "/resume/static/js/main.3ddde0e2.js.map"
+    "main.72d82d0d.js.map": "/resume/static/js/main.72d82d0d.js.map"
   },
   "entrypoints": [
-    "static/js/main.3ddde0e2.js"
+    "static/js/main.72d82d0d.js"
   ]
 }

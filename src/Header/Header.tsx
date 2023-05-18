@@ -23,7 +23,7 @@ export const Header = () => {
               <a key={item} 
               onClick={() =>  setPage(item)}
               style={{color:"#fff",textDecoration:"none",padding:"0 10px",borderBottom: item === page ?  borderStyle : ""}} 
-              href={item}>{item}</a>))}
+              href={`resume/${item}`}>{item}</a>))}
             </Box>
         </Toolbar>
       </AppBar>

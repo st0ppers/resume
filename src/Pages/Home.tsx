@@ -1,9 +1,12 @@
 import { Box, Typography } from "@mui/material";
 import { fontColor } from "../css/Css";
+import { Footer } from "../Footer/Footer";
+import { Header } from "../Header/Header";
 
 export const Home = () => {
   return (
     <>
+    <Header />
       <Box
         sx={{
           display: "flex",
@@ -38,6 +41,7 @@ export const Home = () => {
           </Typography>
         </Box>
       </Box>
+      <Footer />
     </>
   );
 };

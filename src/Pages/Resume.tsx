@@ -3,16 +3,17 @@ import { Education } from "../Components/Education";
 import { Experience } from "../Components/Experience";
 import { ProgrammingSkills } from "../Components/ProgrammingSkills";
 import { SoftSkills } from "../Components/SoftSkills";
+import { Footer } from "../Footer/Footer";
+import { Header } from "../Header/Header";
 
 export const Resume = () => {
    
   return (
     <>
-      <Box sx={{ paddingTop: "10%",backgroundColor:"#333",borderBottom:"solid #333"}}>
-        <Typography sx={{position:"absolute",top:"90px",left:"50px"}} fontSize={50} color={"white"}>
+      <Header />
+      <Typography sx={{padding: "1%",backgroundColor:"#333",borderBottom:"1px solid #4e4e4e",borderTop:"1px solid #4e4e4e"}} fontSize={50} color={"white"}>
           Resume
         </Typography>
-      </Box>
       <Box sx={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
         <Education/>
         <Experience/>
@@ -21,6 +22,7 @@ export const Resume = () => {
         <ProgrammingSkills/>
         <SoftSkills/>
       </Box>
+      <Footer />
     </>
   );
 };

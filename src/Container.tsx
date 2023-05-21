@@ -6,11 +6,7 @@ interface Props {
 }
 export const Container = (props:Props) => {
   return (
-    <Box
-      // width={"100%"}
-      // height={"100vh"}
-      sx={containerStyle}
-    >
+    <Box sx={containerStyle}>
       {props.children}
     </Box>
   );

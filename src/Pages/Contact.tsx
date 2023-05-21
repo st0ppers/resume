@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import MailIcon from "@mui/icons-material/Mail";
+import { Phone } from "../Components/Phone";
+import { Email } from "../Components/Email";
 
 export const Contact = () => {
   return (
@@ -21,30 +21,8 @@ export const Contact = () => {
         Contact
       </Typography>
       <Box sx={{ display: "flex", flexDirection: "row", marginTop: "30px" }}>
-        <Box sx={{ width: "50%", marginLeft: "10%" }}>
-          <Box sx={{ textAlign: "center" }}>
-            <PhoneAndroidIcon sx={{ fontSize: "50px", color: "white" }} />
-          </Box>
-          <Box sx={{ textAlign: "center", color: "white" }}>
-            <Typography fontSize={25}>Call me</Typography>
-          </Box>
-          <Box sx={{ textAlign: "center", color: "white" }}>
-            <Typography fontSize={20}>089-241-0428</Typography>
-          </Box>
-        </Box>
-        <Box sx={{ width: "50%", marginRight: "10%" }}>
-          <Box sx={{ width: "50%", marginLeft: "10%" }}>
-            <Box sx={{ textAlign: "center" }}>
-              <MailIcon sx={{ fontSize: "50px", color: "white" }} />
-            </Box>
-            <Box sx={{ textAlign: "center", color: "white" }}>
-              <Typography fontSize={25}>Email me</Typography>
-            </Box>
-            <Box sx={{ textAlign: "center", color: "white" }}>
-              <Typography fontSize={20}>alexsander.damov@yahoo.com</Typography>
-            </Box>
-          </Box>
-        </Box>
+        <Phone />
+        <Email />
       </Box>
       <Footer />
     </>
